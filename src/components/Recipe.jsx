@@ -4,7 +4,8 @@ import { FaGripfire } from "react-icons/fa6";
 
 
 
-const Recipe = ({ item }) => {
+const Recipe = ({ item, bookmarkItem }) => {
+  
   const {
     recipe_name,
     short_description,
@@ -45,7 +46,7 @@ const Recipe = ({ item }) => {
             
           </div>
             
-          <button className=" bg-[#0BE58A] py-3 px-4 font-medium rounded-2xl  my-4">Want to Cook</button>
+          <button onClick={() => bookmarkItem(item)}  className=" bg-[#0BE58A] py-3 px-4 font-medium rounded-2xl  my-4">Want to Cook</button>
             
             
           </div>
@@ -56,6 +57,7 @@ const Recipe = ({ item }) => {
 
 Recipe.propTypes = {
   item: PropTypes.object.isRequired,
+  bookmarkItem: PropTypes.func
 };
 
 export default Recipe;

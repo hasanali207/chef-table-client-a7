@@ -1,0 +1,24 @@
+import PropTypes from "prop-types";
+
+const Bookmark = ({ bookmark, idx }) => {
+  return (
+    <tr className="">
+      <th>{idx + 1}</th>
+      <td>{bookmark.recipe_name}</td>
+      <td>{bookmark.preparing_time} Minutes</td>
+      <td>{bookmark.calories} Clories</td>
+      <td>
+        <button className="bg-[#0BE58A] py-2 px-2 font-medium rounded-2xl  my-4">
+          Preparing
+        </button>
+      </td>
+    </tr>
+  );
+};
+
+Bookmark.propTypes = {
+    bookmark: PropTypes.object.isRequired
+    
+};
+
+export default Bookmark;
