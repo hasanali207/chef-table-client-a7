@@ -1,0 +1,99 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir Fry",
+      "short_description": "A delicious and healthy chicken stir fry.",
+      "ingredients": [
+        "550g chicken",
+        "120ml soy sauce",
+        "1 onion",
+        "1 avocado",
+        "200g basil leaves",
+        "400g mushroom"
+      ],
+      "preparing_time": "30 min",
+      "calories": "320 calories",
+      "recipe_image": "https://i.ibb.co/rmqY8mX/Chicken-Stir-Fry.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Pasta",
+      "short_description": "A flavorful vegetarian pasta dish.",
+      "ingredients": [
+        "300g pasta",
+        "150g cherry tomatoes",
+        "100g spinach",
+        "1 onion",
+        "1 avocado",
+        "50g parmesan cheese"
+      ],
+      "preparing_time": "25 min",
+      "calories": "250 calories",
+      "recipe_image": "https://i.ibb.co/jW8ywxp/Vegetable-Pasta.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Juicy grilled salmon seasoned to perfection.",
+      "ingredients": [
+        "2 salmon fillets",
+        "1 lemon",
+        "1 onion",
+        "1 avocado",
+        "2 tbsp olive oil",
+        "Salt and pepper to taste"
+      ],
+      "preparing_time": "20 min",
+      "calories": "300 calories",
+      "recipe_image": "https://i.ibb.co/M61CPYV/Grilled-Salmon.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Caprese Salad",
+      "short_description": "A refreshing salad with tomatoes, mozzarella, and basil.",
+      "ingredients": [
+        "2 large tomatoes",
+        "200g fresh mozzarella",
+        "Handful of fresh basil leaves",
+        "2 tbsp balsamic vinegar",
+        "1 avocado",
+        "200g sugar"
+      ],
+      "preparing_time": "15 min",
+      "calories": "180 calories",
+      "recipe_image": "https://i.ibb.co/kx79JJD/Caprese-Salad.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Beef Tacos",
+      "short_description": "Tasty beef tacos with all the fixings.",
+      "ingredients": [
+        "500g ground beef",
+        "8 taco shells",
+        "1 onion",
+        "1 avocado",
+        "Salsa, lettuce, cheese for topping",
+        "150g butter"
+      ],
+      "preparing_time": "35 min",
+      "calories": "380 calories",
+      "recipe_image": "https://i.ibb.co/YDxH78N/Beef-Tacos.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Chocolate Cake",
+      "short_description": "Indulgent chocolate cake that's perfect for any occasion.",
+      "ingredients": [
+        "200g flour",
+        "100g cocoa powder",
+        "200g sugar",
+        "150g butter",
+        "2 eggs",
+        "1 tsp vanilla extract"
+      ],
+      "preparing_time": "40 min",
+      "calories": "400 calories",
+      "recipe_image": "https://i.ibb.co/QCMX9rn/Chocolate-Cake.jpg"
+    }
+  ]
+  
