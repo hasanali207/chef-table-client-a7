@@ -11,8 +11,8 @@
         "200g basil leaves",
         "400g mushroom"
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories",
+      "preparing_time":30,
+      "calories": 320 ,
       "recipe_image": "https://i.ibb.co/rmqY8mX/Chicken-Stir-Fry.jpg"
     },
     {
@@ -27,8 +27,8 @@
         "1 avocado",
         "50g parmesan cheese"
       ],
-      "preparing_time": "25 min",
-      "calories": "250 calories",
+      "preparing_time": 25 ,
+      "calories": 250 ,
       "recipe_image": "https://i.ibb.co/jW8ywxp/Vegetable-Pasta.jpg"
     },
     {
@@ -43,8 +43,8 @@
         "2 tbsp olive oil",
         "Salt and pepper to taste"
       ],
-      "preparing_time": "20 min",
-      "calories": "300 calories",
+      "preparing_time": 20 ,
+      "calories": 300 ,
       "recipe_image": "https://i.ibb.co/M61CPYV/Grilled-Salmon.jpg"
     },
     {
@@ -75,8 +75,8 @@
         "Salsa, lettuce, cheese for topping",
         "150g butter"
       ],
-      "preparing_time": "35 min",
-      "calories": "380 calories",
+      "preparing_time": 35 ,
+      "calories": 380 ,
       "recipe_image": "https://i.ibb.co/YDxH78N/Beef-Tacos.jpg"
     },
     {
@@ -91,8 +91,8 @@
         "2 eggs",
         "1 tsp vanilla extract"
       ],
-      "preparing_time": "40 min",
-      "calories": "400 calories",
+      "preparing_time": 40 ,
+      "calories": 400 ,
       "recipe_image": "https://i.ibb.co/QCMX9rn/Chocolate-Cake.jpg"
     }
   ]
