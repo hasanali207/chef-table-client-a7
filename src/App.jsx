@@ -10,7 +10,10 @@ function App() {
   const [bookmark, setBookmark] = useState([]);
   
   const [cookBookmark, setCookBookmark] = useState([]);
+  
 
+      
+    
 
 
 
@@ -25,25 +28,26 @@ const bookmarkItem = (item) =>{
  if(!isExist){
   setBookmark([...bookmark, item])
  }else{
-  alert("all ready in card")
+  swal.fire({
+    title: "This item already in Bookmark",
+    text: "You can not added multiple item",
+    icon: "info" // You can use icons like "success", "error", etc.
+  });
  }
   
 }
-
-
 const deleteBookmark = (id) =>{
   const newBookmark = bookmark.filter(item => item.recipe_id != id)
   setBookmark(newBookmark)
     
 }
-
-
 const cookingBookmark = (item) =>{
   setCookBookmark([...cookBookmark,item])
  
 }
 
 
+  
 
   return (
     <>
@@ -55,21 +59,19 @@ const cookingBookmark = (item) =>{
             Our Recipes
           </h1>
           <p className="text-[#150B2B60]">
-            Lorem ipsum dolor sit amet consectetur. Proin et feugiat senectus
-            vulputate netus pharetra rhoncus. <br></br> Eget urna volutpat
-            curabitur elementum mauris aenean neque.{" "}
+          Food recipes are like roadmaps, guiding you on a journey towards culinary creativity. <br />Cooking from scratch allows you to control ingredients and personalize your dishes.
           </p>
         </div>
-        <div className="flex justify-between  gap-6">
+        <div className="flex flex-col lg:flex-row justify-between  gap-6">
           {/* left content  */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-[60%]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full lg:w-[60%]">
             {items.map((item) => (
               <Recipe key={item.recipe_id} item={item}  bookmarkItem={bookmarkItem} ></Recipe>
             ))}
           </div>
 
           {/* right content  */}
-          <div className="w-[40%]">
+          <div className="w-full lg:w-[40%]">
             {/* table one  */}
             <div className="top-bookmark border-[#28280420] border py-6">
               <h1 className="text-xl font-medium text-center mb-4">
@@ -88,7 +90,7 @@ const cookingBookmark = (item) =>{
                 <tbody className="">
                   {/* row 1 */}
                   {
-                    bookmark.map((bk, idx) => <Bookmark idx={idx} key={idx} bookmark={bk} deleteBookmark={deleteBookmark} cookingBookmark={cookingBookmark} ></Bookmark>)
+                    bookmark.map((bk, idx) => <Bookmark idx={idx} key={idx} bookmark={bk} deleteBookmark={deleteBookmark} cookingBookmark={cookingBookmark}></Bookmark>)
                   }
                 </tbody>
               </table>
@@ -113,14 +115,14 @@ const cookingBookmark = (item) =>{
                   {/* row 1 */}
                
                 {
-                  cookBookmark.map((item, idx) => <Cookbookmark key={idx} idx={idx} bookmark={item}></Cookbookmark>
+                  cookBookmark.map((item, idx) => <Cookbookmark  key={idx} idx={idx} bookmark={item}></Cookbookmark>
                   )
                 }
               
                   <tr>
                     <td></td>
                     <td></td>
-                    <th>Total Times=  <span><br /></span>  0 Minutes </th>
+                    <th>Total Times=  <span><br /></span>  0 </th>
                     <th>Total Calories=   <span><br /></span> 0 Caories</th>
                     
                   </tr>

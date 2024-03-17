@@ -1,11 +1,11 @@
 
 import PropTypes from 'prop-types';
 
-const Cookbookmark = ({ bookmark, idx }) => {
+const Cookbookmark = ({ bookmark, idx } ) => {
        const {recipe_name, preparing_time, calories } = bookmark
+       
+       
         
-    
-    
     return (
         <tr className="">
         <th>{idx + 1}</th>

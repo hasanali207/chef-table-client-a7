@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Bookmark = ({ bookmark, idx, deleteBookmark, cookingBookmark }) => {
+const Bookmark = ({ bookmark, idx, deleteBookmark, cookingBookmark, handleCookingTime }) => {
 
     
   return (
