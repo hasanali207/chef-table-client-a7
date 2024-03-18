@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Recipe from "./components/Recipe";
 import Bookmark from "./components/Bookmark";
+import Footer from "./components/Footer";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -117,15 +118,15 @@ const cookingBookmark = (item) =>{
                
                 {
                   cookBookmark.map((item, idx) =>{
-                      totalPrepareTime += item.preparing_time
-                      totalColories += item.calories
+                      totalPrepareTime += parseInt(item.preparing_time)
+                      totalColories += parseInt(item.calories)
 
                     return (
                       <tr key={idx}>
                       <th>{idx + 1}</th>
                       <td>{item.recipe_name}</td>
-                      <td>{item.preparing_time} Minutes</td>
-                      <td>{item.calories} Clories</td>
+                      <td>{item.preparing_time} </td>
+                      <td>{item.calories} </td>
                       
                     </tr>
                   );
@@ -150,7 +151,10 @@ const cookingBookmark = (item) =>{
             
           </div>
         </div>
+
+        
       </div>
+      <Footer></Footer>
     </>
   );
 }

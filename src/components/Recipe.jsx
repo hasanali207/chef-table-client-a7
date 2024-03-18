@@ -41,8 +41,8 @@ const Recipe = ({ item, bookmarkItem }) => {
        </div>
         <div className="p-4">
           <div className="flex justify-between items-center">
-            <h3 className="flex justify-center items-center gap-2"> <GoClock></GoClock> {preparing_time} Minutes</h3>
-            <h3 className="flex justify-center items-center gap-2" > <FaGripfire></FaGripfire> {calories} Calories</h3>
+            <h3 className="flex justify-center items-center gap-2"> <GoClock></GoClock> {preparing_time} </h3>
+            <h3 className="flex justify-center items-center gap-2" > <FaGripfire></FaGripfire> {calories} </h3>
             
           </div>
             

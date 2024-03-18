@@ -9,8 +9,8 @@ const Bookmark = ({ bookmark, idx, deleteBookmark, cookingBookmark, handleCookin
     <tr className="">
       <th>{idx + 1}</th>
       <td>{bookmark.recipe_name}</td>
-      <td>{bookmark.preparing_time} Minutes</td>
-      <td>{bookmark.calories} Clories</td>
+      <td>{bookmark.preparing_time} </td>
+      <td>{bookmark.calories} </td>
       <td>
       <button
   onClick={(event) => {
