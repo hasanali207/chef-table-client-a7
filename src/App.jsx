@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Recipe from "./components/Recipe";
 import Bookmark from "./components/Bookmark";
-import Cookbookmark from "./components/Cookbookmark";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -11,6 +10,8 @@ function App() {
   
   const [cookBookmark, setCookBookmark] = useState([]);
   
+  let totalPrepareTime = 0;
+  let totalColories = 0;
 
       
     
@@ -115,15 +116,28 @@ const cookingBookmark = (item) =>{
                   {/* row 1 */}
                
                 {
-                  cookBookmark.map((item, idx) => <Cookbookmark  key={idx} idx={idx} bookmark={item}></Cookbookmark>
+                  cookBookmark.map((item, idx) =>{
+                      totalPrepareTime += item.preparing_time
+                      totalColories += item.calories
+
+                    return (
+                      <tr key={idx}>
+                      <th>{idx + 1}</th>
+                      <td>{item.recipe_name}</td>
+                      <td>{item.preparing_time} Minutes</td>
+                      <td>{item.calories} Clories</td>
+                      
+                    </tr>
+                  );
+                  } 
                   )
                 }
               
                   <tr>
                     <td></td>
                     <td></td>
-                    <th>Total Times=  <span><br /></span>  0 </th>
-                    <th>Total Calories=   <span><br /></span> 0 Caories</th>
+                    <th>Total Times= <span><br /></span> {totalPrepareTime} Minutes   </th>
+                    <th>Total Calories=   <span><br /></span> {totalColories} Caories</th>
                     
                   </tr>
                 

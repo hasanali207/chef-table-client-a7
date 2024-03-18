@@ -1,4 +1,6 @@
 import bannerImageUrl from "../assets/images/banner.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Header = () => {
   return (
     <div>
@@ -7,7 +9,7 @@ const Header = () => {
           <a href="#" className=" text-xl">Food Village</a>
         </div>
         <div className="flex-1">
-          <ul className="flex gap-6">
+          <ul className="hidden lg:flex gap-6">
             <li>
               <a href="#">Home</a>
             </li>
@@ -21,6 +23,8 @@ const Header = () => {
               <a href="#">Home</a>
             </li>
           </ul>
+      <GiHamburgerMenu className="lg:hidden sm:flex text-xl text-center "></GiHamburgerMenu>
+
         </div>
         <div className="flex-none gap-2">
           <div className="form-control">
